@@ -21,7 +21,7 @@ This is a solution to the [3-column preview card component challenge on Frontend
   
 ### Links
 
-- Solution URL:
+- Solution URL: https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-/hub
 - Live Site URL: https://3-column-preview-card-component-mocha-eta.vercel.app/
 ## My process
 
