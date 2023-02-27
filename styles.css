@@ -1,0 +1,122 @@
+:root{
+    --sedans-bg: hsl(31, 77%, 52%);
+    --suv-bg: hsl(184, 100%, 22%);
+    --luxury-bg: hsl(179, 100%, 13%);
+    --attribution-color: hsl(228, 45%, 44%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Outfit:wght@400;500;700;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+
+body{
+    font-size:15px;
+}
+
+.container{
+    min-width:300px;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    margin:1.2rem;
+}
+
+.icons{
+    margin:2.5rem 0 1.5rem 1.8rem;
+}
+
+.sedans{
+    background-color:var(--sedans-bg);
+    border-radius:15px 15px 0 0;
+}
+
+.suvs{
+    background-color:var(--suv-bg);
+}
+
+.luxury{
+    background-color:var(--luxury-bg);
+    border-radius:0 0 15px 15px;
+}
+
+header h2{
+    text-transform:uppercase;
+    font-family:'Big Shoulders Display', sans-serif;
+    font-weight:700;
+    margin:0 0 0 2rem;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+
+.content{
+    font-family:'Lexend Deca', sans-serif;
+    font-weight:400;
+    color:hsla(0, 0%, 100%, 0.75);
+    margin:1rem 2rem 1rem 2rem;
+    line-height:1.7em;
+}
+
+.btn{
+    margin:0.5rem 2rem 2rem 2rem ;
+    border-radius:20px;
+    border:1px solid white;
+}
+
+.btn:hover{
+    background-color:hsla(0, 0%, 100%, 0);
+    transition:0.4s ease-out;
+}
+
+.btn a{
+    display:block;
+    padding:13px 30px 15px 30px;
+}
+
+.btn:hover a{
+    color:white;
+}
+
+.btn-sedans a{
+    color:var(--sedans-bg);
+}
+
+.btn-suvs a{
+    color:var(--suv-bg);
+}
+
+.btn-luxury a{
+    color:var(--luxury-bg);
+}
+
+.attribution, .attribution a{
+    background-image: linear-gradient(to left, var(--sedans-bg), var(--suv-bg), var(--luxury-bg));
+    background-clip:text;
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+@media screen and (min-width:700px){
+    .container{
+        max-width:800px;
+        flex-direction: row;
+        margin:auto;
+    }
+
+    .sedans{
+        border-radius:15px 0 0 15px;
+    }
+
+    .luxury{
+        border-radius:0 15px 15px 0;
+    }
+
+    .attribution{
+        margin-top:-130px;
+    }
+}
