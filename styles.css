@@ -96,8 +96,8 @@ header h2{
 
 .attribution, .attribution a{
     background-image: linear-gradient(to left, var(--sedans-bg), var(--suv-bg), var(--luxury-bg));
-    background-clip:text;
     -webkit-background-clip:text;
+    background-clip:text;
     color:transparent;
 }
 
